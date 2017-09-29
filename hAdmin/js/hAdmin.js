@@ -93,13 +93,13 @@ function SmoothlyMenu() {
         $('#side-menu').hide();
         setTimeout(
             function () {
-                $('#side-menu').fadeIn(500);
+                $('#side-menu').fadeIn(300);
             }, 100);
     } else if ($('body').hasClass('fixed-sidebar')) {
         $('#side-menu').hide();
         setTimeout(
             function () {
-                $('#side-menu').fadeIn(500);
+                $('#side-menu').fadeIn(300);
             }, 300);
     } else {
         $('#side-menu').removeAttr('style');

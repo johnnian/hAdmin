@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="renderer" content="webkit">
 
-    <title> hAdmin- 主页</title>
+    <title> Johnnian主页</title>
 
     <meta name="keywords" content="">
     <meta name="description" content="">
@@ -15,8 +15,9 @@
     <meta http-equiv="refresh" content="0;ie.html" />
     <![endif]-->
 
-    <link rel="shortcut icon" href="favicon.ico"> <link href="css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
-    <link href="css/font-awesome.min.css?v=4.4.0" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico"> 
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.staticfile.org/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="css/animate.css" rel="stylesheet">
     <link href="css/style.css?v=4.1.0" rel="stylesheet">
 </head>
@@ -34,13 +35,12 @@
                             <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                                 <span class="clear">
                                     <span class="block m-t-xs" style="font-size:20px;">
-                                        <i class="fa fa-area-chart"></i>
-                                        <strong class="font-bold">hAdmin</strong>
+                                        <strong class="font-bold">Johnnian</strong>
                                     </span>
                                 </span>
                             </a>
                         </div>
-                        <div class="logo-element">hAdmin
+                        <div class="logo-element" style="font-size:15px;">Johnnian
                         </div>
                     </li>
                     <li class="hidden-folded padder m-t m-b-sm text-muted text-xs">
@@ -433,11 +433,62 @@
                                 </li>
                             </ul>
                         </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                                <i class="fa fa-user"></i> <span class="label label-primary"></span>
+                            </a>
+                            <ul class="dropdown-menu dropdown-alerts" style="width:150px">
+                                <li>
+                                    <a href="mailbox.html">
+                                        <div>
+                                            编辑个人信息
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <a href="login.html">
+                                        <div>
+                                            退出登录
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
                     </ul>
                 </nav>
             </div>
+            <div class="row content-tabs">
+                <button class="roll-nav roll-left J_tabLeft"><i class="glyphicon  glyphicon-chevron-left"></i>
+                </button>
+                <nav class="page-tabs J_menuTabs">
+                    <div class="page-tabs-content">
+                        <a href="javascript:;" class="active J_menuTab" data-id="index_v1.html">首页</a>
+                    </div>
+                </nav>
+                <button class="roll-nav roll-right J_tabRight"><i class="glyphicon glyphicon-chevron-right"></i>
+                </button>
+                <div class="btn-group roll-nav roll-right">
+                    <button class="dropdown J_tabClose" data-toggle="dropdown" style="padding-top:0">关闭标签 <span class="caret" style="margin-top:-3px;"></span>
+
+                    </button>
+                    <ul role="menu" class="dropdown-menu dropdown-menu-right">
+                        <li class="J_tabShowActive"><a><span class="glyphicon glyphicon-map-marker"></span>&nbsp;&nbsp;&nbsp;定位当前选项卡</a> </li>
+                        <li class="divider"></li>
+                        <li class="J_tabCloseAll"><a><span class="glyphicon glyphicon-tags"></span>&nbsp;&nbsp;&nbsp;关闭全部选项卡</a> </li>
+                        <li class="J_tabCloseOther"><a><span class="glyphicon glyphicon-tag"></span>&nbsp;&nbsp;&nbsp;关闭其他选项卡</a> </li>
+                    </ul>
+                </div>
+                <a href="login.html" class="roll-nav roll-right J_tabExit"><i class="glyphicon glyphicon-log-out"></i>&nbsp;退出</a>
+            </div>
             <div class="row J_mainContent" id="content-main">
-                <iframe id="J_iframe" width="100%" height="100%" src="index_v1.html?v=4.0" frameborder="0" data-id="index_v1.html" seamless></iframe>
+                <iframe class="J_iframe" width="100%" height="100%" src="index_v1.html?v=4.0" frameborder="0" data-id="index_v1.html" seamless></iframe>
+            </div>
+            <!-- 页脚版权部分 -->
+            <div class="footer">
+                <div class="pull-right">© 2017
+                    <a href="http://johnnian.github.io" target="_blank">Johnnian</a>
+                </div>
             </div>
         </div>
         <!--右侧部分结束-->
@@ -449,13 +500,12 @@
     <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
     <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
     <script src="js/plugins/layer/layer.min.js"></script>
-
+    <script src="js/plugins/contabs/contabs.js"></script>    
+    <script src="js/plugins/pace/pace.min.js"></script>
+    
     <!-- 自定义js -->
     <script src="js/hAdmin.js?v=4.1.0"></script>
-    <script type="text/javascript" src="js/index.js"></script>
-
-    <!-- 第三方插件 -->
-    <script src="js/plugins/pace/pace.min.js"></script>
+    <!-- <script type="text/javascript" src="js/index.js"></script> -->
 
 </body>
 
