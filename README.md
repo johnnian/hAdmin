@@ -17,3 +17,8 @@
 > [hAdmin演示地址](https://fzninja.github.io/demo/hAdmin/#)
 
 
+# License
+
+Copyright (c) Johnnian
+
+Licensed under the [GPL](./LICENSE) License.
