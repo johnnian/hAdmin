@@ -93,14 +93,14 @@ function SmoothlyMenu() {
         $('#side-menu').hide();
         setTimeout(
             function () {
-                $('#side-menu').fadeIn(300);
+                $('#side-menu').fadeIn(100);
             }, 100);
     } else if ($('body').hasClass('fixed-sidebar')) {
         $('#side-menu').hide();
         setTimeout(
             function () {
-                $('#side-menu').fadeIn(300);
-            }, 300);
+                $('#side-menu').fadeIn(100);
+            }, 100);
     } else {
         $('#side-menu').removeAttr('style');
     }
